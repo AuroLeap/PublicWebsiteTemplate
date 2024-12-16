@@ -1,1 +1,38 @@
-include::./AuroLeap/modules/ROOT/pages/this-website.adoc[]
+= About this Website
+
+To make your own website in this format, follow the readme at AuroLeap's public template (https://github.com/AuroLeap/PublicWebsiteTemplate).  Following this will produce an entire website from repository to website access.
+
+This website is constructed using the following services and tools, note that most of these are free or low cost.
+
+[cols="1,1"]
+|===
+|Aspect                  |Provider / Service
+
+|Domain registration and
+reservation              |Cloudflare
+|Website hosting         |Cloudflare (Free, Generated from static generation script, linked to GitHub repository.  Provides autogenerate website preview from branches and publication automatically)
+|Website repository      |GitHub (Free, Private repository)
+|Static Generator        |Antora
+|Website Content         |Almost all content is written in adoc
+|Content Editing         |IntelliJ IDEA Community Edition with adoc plugin
+|Graphics Editing        |Inkscape for SVG images, Gimp for others
+
+|===
+
+== Domain / Website reservation through Cloudflare
+
+=== Also
+
+== Getting your computer ready.
+
+. Install Fork for repository management.
+
+. Install PodMan
+
+== Build your website by maintaining its files on GitHub
+
+== Test generation of your static site using Antora
+
+== Allowing Cloudflare to build your website automatically from GitHub
+
+== Editing website files in IntelliJ IDEA Community
