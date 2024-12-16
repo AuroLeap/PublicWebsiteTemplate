@@ -1,0 +1,21 @@
+* AuroLeap
+** xref:AboutAuroLeap.adoc[Home]
+** xref:this-website.adoc[]
+** xref:AboutFounder.adoc[]
+* Gilbert
+** xref:AboutGilbert.adoc[]
+** xref:WhyGilbert.adoc[]
+** xref:ImpactsAndConsiderations.adoc[Impacts and Considerations]
+** xref:GilbertGetInvolved.adoc[]
+** xref:GilbertSchedule.adoc[]
+** xref:GilbertSimilarProjects.adoc[]
+* Using Adoc (Reference)
+** xref:ADOCRef/inline-text-formatting.adoc[]
+** xref:ADOCRef/special-characters.adoc[]
+** xref:ADOCRef/admonition.adoc[]
+** xref:ADOCRef/sidebar.adoc[]
+** xref:ADOCRef/ui-macros.adoc[]
+** xref:ADOCRef/extentions.adoc[]
+** Lists
+*** xref:ADOCRef/lists/ordered-list.adoc[]
+*** xref:ADOCRef/lists/unordered-list.adoc[]
