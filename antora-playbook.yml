@@ -38,3 +38,5 @@ ui:
 antora:
   extensions:
   - '@antora/lunr-extension'
+runtime:
+  cache_dir: ./.cache/

@@ -6,7 +6,7 @@
     <title>About this Website :: AuroLeapTestPage</title>
     <link rel="prev" href="AboutAuroLeap.html">
     <link rel="next" href="AboutFounder.html">
-    <meta name="generator" content="Antora 3.1.9">
+    <meta name="generator" content="Antora 3.1.10">
     <link rel="stylesheet" href="../_/css/site.css">
   </head>
   <body class="article">
@@ -85,7 +85,7 @@
     <a class="nav-link" href="WhyGilbert.html">Why Gilbert</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="ImpactsAndConsiderations.html">Gilbert</a>
+    <a class="nav-link" href="ImpactsAndConsiderations.html">Impacts and Considerations</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="GilbertGetInvolved.html">Get involved with Gilbert!</a>
@@ -94,7 +94,43 @@
     <a class="nav-link" href="GilbertSchedule.html">Schedule</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="GilbertSimilarProjects.html">Schedule</a>
+    <a class="nav-link" href="GilbertSimilarProjects.html">Similar Projects</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Using Adoc (Reference)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ADOCRef/inline-text-formatting.html">Inline Text Formatting</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ADOCRef/special-characters.html">Special Characters and Symbols</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ADOCRef/admonition.html">Admonition</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ADOCRef/sidebar.html">Sidebar</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ADOCRef/ui-macros.html">UI-macros</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ADOCRef/extentions.html">Extentions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lists</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ADOCRef/lists/ordered-list.html">Ordered Lists</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ADOCRef/lists/unordered-list.html">Unordered Lists</a>
+  </li>
+</ul>
   </li>
 </ul>
   </li>
@@ -141,151 +177,107 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
+    <body style="background-color:powderblue;">
 <h1 class="page">About this Website</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Asciidoctor has three user interface (UI) macros:</p>
+<p>To make your own website in this format, follow the readme at AuroLeap&#8217;s public template (<a href="https://github.com/AuroLeap/PublicWebsiteTemplate" class="bare">https://github.com/AuroLeap/PublicWebsiteTemplate</a>).  Following this will produce an entire website from repository to website access.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>Button <code>btn:[]</code></p>
-</li>
-<li>
-<p>Keyboard <code>kbd:[]</code></p>
-</li>
-<li>
-<p>Menu <code>menu:[]</code></p>
-</li>
-</ul>
+<div class="paragraph">
+<p>This website is constructed using the following services and tools, note that most of these are free or low cost.</p>
 </div>
-<div class="admonitionblock tip">
-<table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
 <tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-The <code>:experimental:</code> attribute must be set in the document header, component version descriptor (<em>antora.yml</em>), or globally in your Antora playbook (<em>antora-playbook.yml</em>) to enable UI macros.
-</td>
+<th class="tableblock halign-left valign-top">Aspect</th>
+<th class="tableblock halign-left valign-top">Provider / Service</th>
 </tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain registration and
+reservation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloudflare</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Website hosting</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloudflare (Free, Generated from static generation script, linked to GitHub repository.  Provides autogenerate website preview from branches and publication automatically)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Website repository</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GitHub (Free, Private repository)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Static Generator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Antora</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Website Content</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Almost all content is written in adoc</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Content Editing</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IntelliJ IDEA Community Edition with adoc plugin</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Graphics Editing</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inkscape for SVG images, Gimp for others</p></td>
+</tr>
+</tbody>
 </table>
 </div>
 </div>
-</div>
 <div class="sect1">
-<h2 id="button"><a class="anchor" href="#button"></a>Button</h2>
+<h2 id="domain-website-reservation-through-cloudflare"><a class="anchor" href="#domain-website-reservation-through-cloudflare"></a>Domain / Website reservation through Cloudflare</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="triple"><a class="anchor" href="#triple"></a>Triple</h3>
-<div class="sect3">
-<h4 id="quad"><a class="anchor" href="#quad"></a>Quad</h4>
-<div class="paragraph">
-<p>Communicate that a user should press a button with the button macro.</p>
-</div>
-<div class="listingblock">
-<div class="title">Button UI macro</div>
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">Press the btn:[Submit] button when you are finished the survey.
+<h3 id="also"><a class="anchor" href="#also"></a>Also</h3>
 
-Select a file in the file navigator and click btn:[Open].</code></pre>
-</div>
-</div>
-<div class="exampleblock">
-<div class="title">Result</div>
-<div class="content">
-<div class="paragraph">
-<p>Press the <b class="button">Submit</b> button when you are finished the survey.</p>
-</div>
-<div class="paragraph">
-<p>Select a file in the file navigator and click <b class="button">Open</b>.</p>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="keyboard"><a class="anchor" href="#keyboard"></a>Keyboard</h2>
+<h2 id="getting-your-computer-ready"><a class="anchor" href="#getting-your-computer-ready"></a>Getting your computer ready.</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Create keyboard shortcuts with the keyboard macro.</p>
-</div>
-<div class="listingblock">
-<div class="title">Keyboard UI macro</div>
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">Press kbd:[esc] to exit insert mode.
-
-Use the shortcut kbd:[Ctrl+T] to open a new tab in your browser.
-
-kbd:[Ctrl+Shift+N] will open a new incognito window.</code></pre>
-</div>
-</div>
-<div class="exampleblock">
-<div class="title">Result</div>
-<div class="content">
-<div class="paragraph">
-<p>Press <kbd>esc</kbd> to exit insert mode.</p>
-</div>
-<div class="paragraph">
-<p>Use the shortcut <span class="keyseq"><kbd>Ctrl</kbd>+<kbd>T</kbd></span> to open a new tab in your browser.</p>
-</div>
-<div class="paragraph">
-<p><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd></span> will open a new incognito window.</p>
-</div>
-</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Install Fork for repository management.</p>
+</li>
+<li>
+<p>Install PodMan</p>
+</li>
+</ol>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="menu"><a class="anchor" href="#menu"></a>Menu</h2>
+<h2 id="build-your-website-by-maintaining-its-files-on-github"><a class="anchor" href="#build-your-website-by-maintaining-its-files-on-github"></a>Build your website by maintaining its files on GitHub</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Show readers how to select a menu item with the menu macro.</p>
-</div>
-<div class="listingblock">
-<div class="title">Menu UI macro</div>
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">To save the file, select menu:File[Save].
 
-Select menu:View[Zoom &gt; Reset] to reset the zoom level to the default setting.</code></pre>
-</div>
-</div>
-<div class="exampleblock">
-<div class="title">Result</div>
-<div class="content">
-<div class="paragraph">
-<p>To save the file, select <span class="menuseq"><b class="menu">File</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Save</b></span>.</p>
-</div>
-<div class="paragraph">
-<p>Select <span class="menuseq"><b class="menu">View</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Zoom</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Reset</b></span> to reset the zoom level to the default setting.</p>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="image"><a class="anchor" href="#image"></a>Image</h2>
+<h2 id="test-generation-of-your-static-site-using-antora"><a class="anchor" href="#test-generation-of-your-static-site-using-antora"></a>Test generation of your static site using Antora</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Show readers how to set an image using the image macro</p>
-</div>
-<div class="listingblock">
-<div class="title">Image</div>
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">To display an image, insert the text as image:{Path/To/Image}[]</code></pre>
+
 </div>
 </div>
-<div class="exampleblock">
-<div class="title">Result</div>
-<div class="content">
-<div class="paragraph">
-<p><span class="image"><img src="_images/AuroLeapGraphic.png" alt="AuroLeapGraphic"></span></p>
+<div class="sect1">
+<h2 id="allowing-cloudflare-to-build-your-website-automatically-from-github"><a class="anchor" href="#allowing-cloudflare-to-build-your-website-automatically-from-github"></a>Allowing Cloudflare to build your website automatically from GitHub</h2>
+<div class="sectionbody">
+
 </div>
 </div>
-</div>
+<div class="sect1">
+<h2 id="editing-website-files-in-intellij-idea-community"><a class="anchor" href="#editing-website-files-in-intellij-idea-community"></a>Editing website files in IntelliJ IDEA Community</h2>
+<div class="sectionbody">
+
 </div>
 </div>
 <nav class="pagination">

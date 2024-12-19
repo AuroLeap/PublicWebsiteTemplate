@@ -1,6 +1,6 @@
 $error.clear()
 try { 
-podman build -t local/antora:auroleap -f $PSScriptRoot/Dockerfile .
+podman build -t local/websitedocker:main -f $PSScriptRoot/Dockerfile .
 }
 catch { "Error occured" }
 Write-Host 'Press any key to close...';

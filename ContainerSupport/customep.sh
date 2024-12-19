@@ -10,5 +10,5 @@
 #
 #exec "$@"
 ls
-chmod 755 ./StartCmd.sh
-./StartCmd.sh
+chmod 755 ./CloudFlareBuild.sh
+./CloudFlareBuild.sh

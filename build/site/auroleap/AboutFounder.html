@@ -6,7 +6,7 @@
     <title>About the Founder :: AuroLeapTestPage</title>
     <link rel="prev" href="this-website.html">
     <link rel="next" href="AboutGilbert.html">
-    <meta name="generator" content="Antora 3.1.9">
+    <meta name="generator" content="Antora 3.1.10">
     <link rel="stylesheet" href="../_/css/site.css">
   </head>
   <body class="article">
@@ -85,7 +85,7 @@
     <a class="nav-link" href="WhyGilbert.html">Why Gilbert</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="ImpactsAndConsiderations.html">Gilbert</a>
+    <a class="nav-link" href="ImpactsAndConsiderations.html">Impacts and Considerations</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="GilbertGetInvolved.html">Get involved with Gilbert!</a>
@@ -94,7 +94,43 @@
     <a class="nav-link" href="GilbertSchedule.html">Schedule</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="GilbertSimilarProjects.html">Schedule</a>
+    <a class="nav-link" href="GilbertSimilarProjects.html">Similar Projects</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Using Adoc (Reference)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ADOCRef/inline-text-formatting.html">Inline Text Formatting</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ADOCRef/special-characters.html">Special Characters and Symbols</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ADOCRef/admonition.html">Admonition</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ADOCRef/sidebar.html">Sidebar</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ADOCRef/ui-macros.html">UI-macros</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ADOCRef/extentions.html">Extentions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Lists</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ADOCRef/lists/ordered-list.html">Ordered Lists</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ADOCRef/lists/unordered-list.html">Unordered Lists</a>
+  </li>
+</ul>
   </li>
 </ul>
   </li>
@@ -141,123 +177,9 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
+    <body style="background-color:powderblue;">
 <h1 class="page">About the Founder</h1>
-<div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
-<p>You can add the following inline styles to your content:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Bold</p>
-</li>
-<li>
-<p>Italic</p>
-</li>
-<li>
-<p>Monospace</p>
-</li>
-<li>
-<p>Highlight</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="bold-and-italic"><a class="anchor" href="#bold-and-italic"></a>Bold and italic</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>You can bold and italic entire phrases, a word, and characters in a word.</p>
-</div>
-<div class="listingblock">
-<div class="title">Bold and italic inline formatting</div>
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">*bold phrase* &amp; **char**acter**s**
 
-_italic phrase_ &amp; __char__acter__s__
-
-*_bold italic phrase_* &amp; **__char__**acter**__s__**</code></pre>
-</div>
-</div>
-<div class="exampleblock">
-<div class="title">Result</div>
-<div class="content">
-<div class="paragraph">
-<p><strong>bold phrase</strong> &amp; <strong>char</strong>acter<strong>s</strong></p>
-</div>
-<div class="paragraph">
-<p><em>italic phrase</em> &amp; <em>char</em>acter<em>s</em></p>
-</div>
-<div class="paragraph">
-<p><strong><em>bold italic phrase</em></strong> &amp; <strong><em>char</em></strong>acter<strong><em>s</em></strong></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="monospace"><a class="anchor" href="#monospace"></a>Monospace</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>You can monospace entire phrases, a word, and characters in a word.</p>
-</div>
-<div class="listingblock">
-<div class="title">Monospace inline formatting</div>
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">`monospace phrase` &amp; ``char``acter``s``
-
-`*monospace bold phrase*` &amp; ``**char**``acter``**s**``
-
-`_monospace italic phrase_` &amp; ``__char__``acter``__s__``
-
-`*_monospace bold italic phrase_*` &amp;
-``**__char__**``acter``**__s__**``</code></pre>
-</div>
-</div>
-<div class="exampleblock">
-<div class="title">Result</div>
-<div class="content">
-<div class="paragraph">
-<p><code>monospace phrase</code> &amp; <code>char</code>acter<code>s</code></p>
-</div>
-<div class="paragraph">
-<p><code><strong>monospace bold phrase</strong></code> &amp; <code><strong>char</strong></code>acter<code><strong>s</strong></code></p>
-</div>
-<div class="paragraph">
-<p><code><em>monospace italic phrase</em></code> &amp; <code><em>char</em></code>acter<code><em>s</em></code></p>
-</div>
-<div class="paragraph">
-<p><code><strong><em>monospace bold italic phrase</em></strong></code> &amp;
-<code><strong><em>char</em></strong></code>acter<code><strong><em>s</em></strong></code></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="highlight"><a class="anchor" href="#highlight"></a>Highlight</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>You can highlight entire phrases, a word, and characters in a word.</p>
-</div>
-<div class="listingblock">
-<div class="title">Highlight inline formatting</div>
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">Let's #highlight this phrase# and part of th##is##.</code></pre>
-</div>
-</div>
-<div class="exampleblock">
-<div class="title">Result</div>
-<div class="content">
-<div class="paragraph">
-<p>Let&#8217;s <mark>highlight this phrase</mark> and part of th<mark>is</mark>.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
 <nav class="pagination">
   <span class="prev"><a href="this-website.html">About this Website</a></span>
   <span class="next"><a href="AboutGilbert.html">About Gilbert</a></span>
