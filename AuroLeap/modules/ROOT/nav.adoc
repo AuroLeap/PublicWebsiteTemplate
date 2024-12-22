@@ -1,6 +1,9 @@
 * AuroLeap
 ** xref:AboutAuroLeap.adoc[Home]
 ** xref:this-website.adoc[]
+*** xref:website-to-dos.adoc[]
+*** xref:external-repos.adoc[]
+*** xref:customize-colors.adoc[]
 ** xref:AboutFounder.adoc[]
 * Gilbert
 ** xref:AboutGilbert.adoc[]
