@@ -31,7 +31,7 @@ reservation              |Cloudflare
 * Create a free account at Cloudflare (https://www.cloudflare.com/)
 * Browse to "Manage Domains" underneath the "Domain Registration" drop down on the left side.
 
-image:images/Cloudflare1.png[]
+image:images/Cloudflare1.png[%=50]
 
 == Getting your computer ready.
 
