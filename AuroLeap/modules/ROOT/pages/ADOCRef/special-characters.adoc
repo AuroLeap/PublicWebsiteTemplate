@@ -1,6 +1,7 @@
 = Special Characters and Symbols
 :table-caption!:
 
+
 Special character and symbol replacement is built into Asciidoctor.
 
 During conversion, the characters in the table below are replaced with the appropriate character or Unicode entity.

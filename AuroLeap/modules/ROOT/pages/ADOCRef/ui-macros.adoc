@@ -77,11 +77,12 @@ Show readers how to set an image using the image macro
 
 .Image
 ----
-To display an image, insert the text as image:{Path/To/Image}[]
+To display an image, insert the text as:
+image:{Path/To/Image}[]
 
 ----
 
 .Result
 ====
-image:AuroLeapGraphic.png[]
+image:drawing.svg[]
 ====

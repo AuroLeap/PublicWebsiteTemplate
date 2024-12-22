@@ -1,6 +1,13 @@
 = About this Website
+:hide-uri-scheme:
 
-To make your own website in this format, follow the readme at AuroLeap's public template (https://github.com/AuroLeap/PublicWebsiteTemplate).  Following this will produce an entire website from repository to website access.
+To make your own website in this format, follow the readme at AuroLeap's public template (Visible at https://www.example.auroleap.org, built from https://github.com/AuroLeap/PublicWebsiteTemplate) .
+
+Following this guide to produce an entire website from repository to website access.
+
+Note this template is oriented around Antora's standard template.  There are many different styles and templates available.  Other considerations that have not been pursued:
+
+* https://github.com/xaprb/story
 
 This website is constructed using the following services and tools, note that most of these are free or low cost.
 
@@ -21,7 +28,10 @@ reservation              |Cloudflare
 
 == Domain / Website reservation through Cloudflare
 
-=== Also
+* Create a free account at Cloudflare (https://www.cloudflare.com/)
+* Browse to "Manage Domains" underneath the "Domain Registration" drop down on the left side.
+
+image:Cloudflare1.png[]
 
 == Getting your computer ready.
 
