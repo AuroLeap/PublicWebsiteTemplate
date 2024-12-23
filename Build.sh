@@ -2,8 +2,8 @@
 SCRIPTPATH=$(dirname "$SCRIPT")
 echo "$SCRIPTPATH"
 echo Copying root assets so github readme file can be embedded into website file.
-cp -R -a ./images/. ./AuroLeap/modules/ROOT/images/
-cp ./README.adoc ./AuroLeap/modules/ROOT/pages/README.adoc
+cp -R -a $SCRIPTPATH/images/. $SCRIPTPATH/AuroLeap/modules/ROOT/images/
+cp $SCRIPTPATH/README.adoc $SCRIPTPATH/AuroLeap/modules/ROOT/pages/README.adoc
 npm i antora
 npm i @antora/lunr-extension
 npm i asciidoctor-kroki
@@ -12,7 +12,7 @@ rm ./AuroLeap/modules/ROOT/pages/README.adoc
 for file in ./images/*
 do
 	name=`basename $file`
-	rmpath=./AuroLeap/modules/ROOT/images/$name
+	rmpath=$SCRIPTPATH/AuroLeap/modules/ROOT/images/$name
 	echo Removing copied asset "$rmpath"
 	rm -r "$rmpath"
 done
