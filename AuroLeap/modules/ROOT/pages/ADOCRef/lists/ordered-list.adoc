@@ -1,5 +1,8 @@
 = Ordered Lists
 
+include::../../ref.adoc[]
+
+
 == Ordered list
 
 .Ordered list with title

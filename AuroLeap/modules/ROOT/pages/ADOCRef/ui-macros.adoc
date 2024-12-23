@@ -1,4 +1,7 @@
 = UI-macros
+
+include::../ref.adoc[]
+
 :example-caption!:
 
 Asciidoctor has three user interface (UI) macros:

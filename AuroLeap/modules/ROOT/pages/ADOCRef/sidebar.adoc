@@ -1,5 +1,8 @@
 = Sidebar
 
+include::../ref.adoc[]
+
+
 == Sidebar block
 
 A sidebar can be titled and contain any type of content such as source code and images.
