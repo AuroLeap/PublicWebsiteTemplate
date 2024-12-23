@@ -1,9 +1,10 @@
 = About this Website
 :hide-uri-scheme:
+:imagesdir: images/
 
 To make your own website in this format, follow the readme at AuroLeap's public template (Visible at https://www.example.auroleap.org, built from https://github.com/AuroLeap/PublicWebsiteTemplate) .
 
-Following this guide to produce an entire website from repository to website access.
+Follow this guide to produce an entire website from repository creation to website access.
 
 Note this template is oriented around Antora's standard template.  There are many different styles and templates available.  Other considerations that have not been pursued:
 
@@ -31,15 +32,27 @@ reservation              |Cloudflare
 * Create a free account at Cloudflare (https://www.cloudflare.com/)
 * Browse to "Manage Domains" underneath the "Domain Registration" drop down on the left side.
 
-image:images/Cloudflare1.png[%=50]
+image:Cloudflare1.png[scaledwidth=50%]
+
+* Search for and purchase your respective domain.
+* Alternatively, use a domain under a free service, for example, from https://freedomain.one/.  Note this will likely not be able to take advantage of build services directly from CloudFlare, but could still be published as a part of Git Automations.
 
 == Getting your computer ready.
 
-. Install Fork for repository management.
+. Install Fork for repository management. (https://git-fork.com/)
+** Note there are many other alternatives available here, I prefer fork for it's ease of use.
+** Note the IDE (integrated development environment) listed below and many others support git repositories inherently, but
 
 . Install PodMan
+** https://podman.io/docs/installation
+** Podman is used to build the website using a container (so that all dependencies are executed run from a single scripts, and can easily be called from a different build environment, such as a build server - in this case from CloudFlare)
 
 == Build your website by maintaining its files on GitHub
+
+NOTE: There are many.
+
+
+. Create a github account
 
 == Test generation of your static site using Antora
 
