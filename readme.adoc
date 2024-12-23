@@ -140,6 +140,41 @@ Note: This is a barebones method to get changes avaiable.  Moving forward, you w
 
 == Allowing Cloudflare to build your website automatically from GitHub
 
-The final step in the process
+The final step in the process is linking CLoudFlare to your GitHub repository and allowing it to build your site.
+
+. Make sure GitHub is allowing access to the repository in question.
+https://github.com/organizations/AuroLeap/settings/installations/58033624[A link directly to CloudFlare permissions in GitHub is here]  Scroll down on this page till you see the repositories Cloudflare is able to access.  I prefer to restrict this, but you can also give Cloudflare access to all repositories.  Don't forget to press "Save" after adding this.
+:image:RepoAccess.png[]
+
+. Go back to the CLoudFlare dashboard, and on the navigation panel on the left side, select "Workers & Pages"
+:image:WorkersAndPages.png[]
+
+. Make sure "Pages" is selected, and press "Connect to Git"
+
+Note: If you are hosting your repository through a different service, you will need to find the respective method to connect CloudFlare to your repository.
+
+:image:CreatePage.png[]
+
+. You should now see the repository you gave access to earlier in the list presented.  Select it and press "Begin setup"
+:image:BeginSetup.png[]
+
+. You will be presented with a few options here.  Set your project name, you can keep the "Production branch" as main (note this is NOT the same as the branch I showed being committed to above, this is on purpose, I will return to it shortly).  Other build settings:
+
+* Framework preset: None
+
+* Build command:
+----
+bash Build.sh
+----
+Note: This is the same script that the container calls when running the build script.
+
+* Build output directory:
+----
+build/site
+----
+
+:image:CloudflareSetup.png[]
+
+After pressing "Save and Deploy" you will notice the build will fail.  This is expected.  Go back to "Workers & Pages"
 
 == Editing website files in IntelliJ IDEA Community
