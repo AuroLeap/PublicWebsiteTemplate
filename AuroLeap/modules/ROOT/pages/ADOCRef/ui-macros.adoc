@@ -84,5 +84,5 @@ image:{Path/To/Image}[]
 
 .Result
 ====
-image:drawing.svg[]
+image:imagemacro.svg[]
 ====
