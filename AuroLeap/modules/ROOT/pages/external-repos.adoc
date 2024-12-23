@@ -1,0 +1,5 @@
+= External / multi repo support
+
+Note Antora inherently supports information sourcing from multiple respositories. This is especially important in trying to document many different projects with interdependencies.
+
+Although that has not been done here, a good example of this is here: https://rmoff.net/2023/12/19/deploying-antora-with-github-actions-and-a-private-github-repo/

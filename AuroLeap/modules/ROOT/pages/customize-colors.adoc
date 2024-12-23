@@ -1,0 +1,21 @@
+= Color customization
+
+Color customization can be performed by editing htlm in respective partials (.hbs files usually located in the "ui-bundle\partials" folder path.)
+
+A reference of more customizations can be found here: https://www.w3schools.com/html/html_styles.asp
+
+An example of a line added to the "article.hbs" file:
+
+[source,html]
+----
+<article class="doc">
+    <body style="color:gray;background-color:powderblue;"> <!--1-->
+{{#with page.title}}
+<h1 class="page">{{{this}}}</h1>
+{{/with}}
+{{{page.contents}}}
+{{> pagination}}
+</article>
+
+----
+<1> On this line a custom color has been assigned to the article class, and is why this appears in a webrowser with a non-standard background color.

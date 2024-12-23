@@ -1,0 +1,2 @@
+//Note this document is copied from the git root when running the bat script, so that the readme content shown on github is the same as that shown here.  The images are also copied to the image directory.
+include::README.adoc[]

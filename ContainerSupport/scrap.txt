@@ -1,0 +1,5 @@
+Cannot find module '@antora/lunr-extension' at path /usr/local/Working or /usr/local/share/.config/yarn/global/node_modules/@antora/site-generator/lib
+
+antora:
+  extensions:
+  - require: 'node_modules/@antora/lunr-extension'
