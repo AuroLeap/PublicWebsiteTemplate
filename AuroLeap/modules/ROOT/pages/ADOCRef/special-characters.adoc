@@ -1,4 +1,7 @@
 = Special Characters and Symbols
+
+include::../ref.adoc[]
+
 :table-caption!:
 
 

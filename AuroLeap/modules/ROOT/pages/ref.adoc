@@ -1,0 +1,1 @@
+<This file and it's contents were copied from the https://docs.antora.org/antora/latest/[Antora documentation] for quick local reference.>
