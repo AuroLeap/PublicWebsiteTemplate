@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="ADOC" pattern="file[AuroLeapWebsite]:*.adoc" />
+</component>

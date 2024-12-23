@@ -1,0 +1,7 @@
+name: gilbert
+title: Gilbert
+version: 0.01
+prerelease: -beta.1
+nav:
+- modules/ROOT/nav.adoc
+- modules/module-one/nav.adoc

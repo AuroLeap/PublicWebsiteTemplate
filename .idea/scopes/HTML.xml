@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="HTML" pattern="file[AuroLeapWebsite]:*.hbs" />
+</component>
