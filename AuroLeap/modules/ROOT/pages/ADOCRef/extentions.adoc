@@ -1,4 +1,7 @@
 = Extentions
+
+include::../ref.adoc[]
+
 :example-caption!:
 
 Asciidoctor has multiple extentions.

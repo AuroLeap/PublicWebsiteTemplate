@@ -1,7 +1,7 @@
 name: auroleap
 title: AuroLeap
 version: ~
-start_page: AboutAuroLeap.adoc
+start_page: this-website.adoc
 asciidoc:
   attributes:
     source-language: asciidoc@
