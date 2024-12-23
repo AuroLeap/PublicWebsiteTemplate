@@ -123,12 +123,23 @@ TIP: If you did not already start podman or allow it to automatically run after 
 
 === Push your changes (if any) back into your repository.
 
-. Now that your website is built, make sure to save any changes and push them back using fork or an equivalent git repository manager.  First view your website repository again in fork, select all the files in the "Unstaged" area you would like to be pushed back to the online repository by either ctrl+left-click or shift+left-click (to select a range), and press "stage".
+. Now that your website is built, make sure to save any changes and push them back using fork or an equivalent git repository manager.  First view your website repository again in Fork.  In general it is best to commit all your changes to a separate branch from the main repository, so that you can see all changes reflect in a preview website view before deploying them to a fully public accessible site. To do this, create a branch first using Fork by right clicking the primary branch (usually "main") and setting a custom name.
+:image:CreateBranch.png[]
+
+. Next select all the files in the "Unstaged" area you would like to be pushed back to the online repository by either ctrl+left-click or shift+left-click (to select a range), and press "stage".
 :image:Stage.png[]
 
-. Once they are staged, 
+. Once they are staged, you can enter a description and press the "commit" button.
+:image:Commit.png[]
+
+Note: This is a barebones method to get changes avaiable.  Moving forward, you would likely want to create a branch in GitHub to seperate content that is ready to release from content that is
+
+. Now the changes are committed, but still not available in the online repository you created earlier, which will be necessary for Cloudflare to build the content and publish the site.  To finalize this, press the "Push" button.
+:image:Push.png[]
+
 
 == Allowing Cloudflare to build your website automatically from GitHub
 
+The final step in the process
 
 == Editing website files in IntelliJ IDEA Community

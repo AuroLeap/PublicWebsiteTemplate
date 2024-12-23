@@ -7,3 +7,4 @@
 * Add a common issues section
 * Add automated testing notes
 * Add
+* Clean up tutorial screenshots / captures
