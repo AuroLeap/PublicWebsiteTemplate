@@ -2,13 +2,15 @@
 :hide-uri-scheme:
 :imagesdir: images/
 
-To make your own website in this format, follow the readme at AuroLeap's public template (Visible at https://www.example.auroleap.org, built from https://github.com/AuroLeap/PublicWebsiteTemplate) .
+To make your own website in this format, follow this readme at AuroLeap's public template (Visible at https://www.example.auroleap.org, built from https://github.com/AuroLeap/PublicWebsiteTemplate) .
 
 Follow this guide to produce an entire website from repository creation to website access.
 
-Note this template is oriented around Antora's standard template.  There are many different styles and templates available.  Other considerations that have not been pursued:
+Note this template is oriented around Antora's standard template.  There are many different styles and templates available to act as groundwork for a website.  Other considerations that have not been pursued:
 
 * https://github.com/xaprb/story
+
+A walkthrough of this tutorial can be found at {Future hopeful YouTube link placeholder here}
 
 This website is constructed using the following services and tools, note that most of these are free or low cost.
 
@@ -47,15 +49,64 @@ image:Cloudflare1.png[scaledwidth=50%]
 ** https://podman.io/docs/installation
 ** Podman is used to build the website using a container (so that all dependencies are executed run from a single scripts, and can easily be called from a different build environment, such as a build server - in this case from CloudFlare)
 
-== Build your website by maintaining its files on GitHub
+== Set up your website by maintaining its files on GitHub
 
-NOTE: There are many.
+NOTE: There are many different repository hosting methods, GitLab and GitHub are the most popular.  Cloudflare has integrations build in for GitHub and GitLab, and likely others.  For the purposes of this tutorial, 
 
 
 . Create a github account
+** https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github
+. Create a github repository
+** Option 1: Create a fresh repo.
+*** https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories
+*** Copy the entire contents of this repo to your new repo to get started.
+** Option 2: Fork this repo to your new repo.
+*** https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo
 
-== Test generation of your static site using Antora
+== Pull your new website and test generation of your static site using Antora
+
+Note: If you're familiar with reposition cloning and synchronization, you can skip this section entirely.
+
+Note: Again, there are many different tools you can use to maintain your repository.
+
+=== Using fork, create an SSH key and import it into your GitHub account.
+
+1.Browse to "File"=> "Configure SSH Keys..."
+
+:image:ForkSSH.png[]
+
+2.In the popup window, press the "+" button => "New SSH Key..."
+
+:image:ForkSSH2.png[]
+
+3.Enter a name for your key and an email to associate to commits made using the SSH key.  I usually name the key something related to the computer and year, since this key is per computer.
+
+:image:ForkSSH3.png[]
+
+You will now see your public SSH key listed in the window.  This is what must be copied and added to GitHub in order to ensure you can clone repositories from GitHub using Fork.
+
+=== Upload your new SSH key to GitHub.
+* https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+
+Now that you have connected your generated ssh key from your pc to your GitHub account, you should be able to clone and push to your new GitHub repository.
+
+=== Clone your new repository.
+
+1.Copy the GitHub SSH url using the "copy" link provided on GitHub
+:image:Clone.png[]
+
+2.In Fork, browse to "File"=> "Clone..."
+:image:Clone2.png[]
+
+3.Since you just copied the SSH link to your repository, the "Repository URL" field should already be populated.  Set the parent folder and "Name" (which will be the folder) where you want the contents of this repostiroy to be checked out to on your computer.
+:image:Clone3.png[]
+
+=== Test local website generation.
+
+
+=== Push your changes (if any) back into your repository.
 
 == Allowing Cloudflare to build your website automatically from GitHub
+
 
 == Editing website files in IntelliJ IDEA Community
