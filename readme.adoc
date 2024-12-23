@@ -98,13 +98,35 @@ Now that you have connected your generated ssh key from your pc to your GitHub a
 2.In Fork, browse to "File"=> "Clone..."
 :image:Clone2.png[]
 
-3.Since you just copied the SSH link to your repository, the "Repository URL" field should already be populated.  Set the parent folder and "Name" (which will be the folder) where you want the contents of this repostiroy to be checked out to on your computer.
+3.Since you just copied the SSH link to your repository, the "Repository URL" field should already be populated.  Set the parent folder and "Name" (which will be the folder) where you want the contents of this reposition to be checked out to on your computer.
 :image:Clone3.png[]
 
 === Test local website generation.
+1.Now that the repository is checked out, the local podman container can be built, which is called from the build script to ensure an isolated environment.
 
+Note: This certainly is not required, if you are in a linux environment all dependencies could be checked out locally and built by directly running the "Build.sh" script.  But this route was taken for consistency and for an isolated environment that can avoid conflicts with the users desktop environment.
+
+.. Run "RunOnceToCreateDockerImage" (bat on Windows, sh on linux) from the folder either by double clicking (on linux you will need to be sure to make this script executable) or through terminal.
+
+TIP: If you did not already start podman or allow it to automatically run after install, you will need to manually start it before running this script.
+
+:image:BuildDockerImage.png[]
+
+2.Now run the build script to see if the website can be built on your computer.
+:image:RunDockerImage.png[]
+
+3.If everything was successful, you can now browse to the build path and open "index.html" to browse your locally built website on your pc.
+:image:OpenSite.png[]
+
+4.You should now see your site in your browser.
+:image:ViewSite.png[]
 
 === Push your changes (if any) back into your repository.
+
+. Now that your website is built, make sure to save any changes and push them back using fork or an equivalent git repository manager.  First view your website repository again in fork, select all the files in the "Unstaged" area you would like to be pushed back to the online repository by either ctrl+left-click or shift+left-click (to select a range), and press "stage".
+:image:Stage.png[]
+
+. Once they are staged, 
 
 == Allowing Cloudflare to build your website automatically from GitHub
 

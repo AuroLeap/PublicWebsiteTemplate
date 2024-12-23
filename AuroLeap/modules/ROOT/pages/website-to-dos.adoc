@@ -1,3 +1,9 @@
 = To-do List
-- Impliment multilingual support (https://gitlab.com/antora-ui-custom/antora-i18n)
-- Support dark / light rendering mode.
+
+* Implement multilingual support (https://gitlab.com/antora-ui-custom/antora-i18n)
+* Support dark / light rendering mode.
+* Consider publishing a public podman / docker image so that users do not need to build a local container before running the build script.
+* Complete linux container build and launch scripts.
+* Add a common issues section
+* Add automated testing notes
+* Add
