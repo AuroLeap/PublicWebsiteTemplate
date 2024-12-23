@@ -1,5 +1,6 @@
 #!/bin/ash
-cd "${0%/*}"
+SCRIPTPATH=$(dirname "$SCRIPT")
+echo "$SCRIPTPATH"
 echo Copying root assets so github readme file can be embedded into website file.
 cp -R -a ./images/. ./AuroLeap/modules/ROOT/images/
 cp ./README.adoc ./AuroLeap/modules/ROOT/pages/README.adoc
