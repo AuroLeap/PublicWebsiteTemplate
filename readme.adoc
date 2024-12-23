@@ -248,4 +248,39 @@ If you don't have anyone else to review, and just want to get this pulled throug
 
 === Verify your production deployment and connect your URL
 
+Now if you browse back to your deployment on Cloudflare, you should see the production and preview both in a green status.
+
+:image:ProductionGreen.png[]
+
+Now you can tie this production deployment to your url. Press "Custom domains" and enter your custom domain:
+
+:image:CustomDomain.png[]
+
+And finally confirm the new DNS record.
+
+:image:ConfirmDNS.png[]
+
+After a few minutes (and this may take much longer depending on your DNS provider and their refresh rates / update rates from Cloudflare), you should be able to visit the site by typing it into your URL:
+
+:image:ExamplePageAccessable.png[]
+
+Note: Now that any changes you make to the non-production branch will be visible through a preview on Cloudflare, and when you are ready to deploy those to production, it is as simple as making a pull request in GitHub to pull those from whatever branch you are using into the respective production branch.
+
+Note: While this site is built using Antora, there are many other templates and site generators available.  You can easily modify the build.sh file, and run the container locally to try different static generators to see what the output is.  Keeping this capability for local generation can also be advantageous if you wish to move to a different web host, or if you just want to copy html files directly to a provider.
+
+
 == Editing website files in IntelliJ IDEA Community
+
+Once you confirm your preview site is running, I would recommend editing content in a decent IDE to easily search through files and organize content as the project becomes more complex.  The example site here comes with an IntelliJ IDEA project at the root.  So if you open IntelliJ IDEA you can immediately open the project repository.
+
+:image:IdeaOpen.png[]
+
+As this is built using Antora, I have a custom filter setup to only show adoc files.  I also install the https://plugins.jetbrains.com/plugin/7391-asciidoc[ascii-doctor intellij plugin] to view .adoc files directly.
+
+:image:IntelliJViewFilter.png[]
+
+The https://docs.antora.org/antora/latest/[Antora documentation] gives the fullest detail on how to modify content through .adoc files, but as you browse the content you will quickly see how xrefs point to files, how images are pulled, and many other pieces.
+
+Note: Again, I would highly encourage using and IDE that provides support for adoc rendering, even if it isn't perfect.  You can get an idea of how it shows the rendered content from the below screenshot:
+
+:image:IntelliJCap.png[]
