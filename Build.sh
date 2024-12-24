@@ -1,6 +1,8 @@
 #!/bin/ash
 echo Starting build script...
 SCRIPTPATH=$(dirname "$SCRIPT")
+echo Deleting old build directory if it exists
+rm -r $SCRIPTPATH/build
 echo "$SCRIPTPATH"
 echo Copying root assets so github readme file can be embedded into website file.
 cp -R -a $SCRIPTPATH/images/. $SCRIPTPATH/AuroLeap/modules/ROOT/images/
