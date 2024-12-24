@@ -1,5 +1,6 @@
 site:
-  title: AuroLeapTestPage
+  title: AuroLeap Example Page
+  url: https://example.auroleap.org
   # the 404 page and sitemap files only get generated when the url property is set
   start_page: auroleap::index.adoc
 content:
@@ -28,13 +29,6 @@ asciidoc:
 ui:
   bundle:
     url: ui-bundle
-    snapshot: true
-  supplemental_files:
-  - path: ui.yml
-    contents: |
-      static_files:
-      - .nojekyll
-  - path: .nojekyll
 antora:
   extensions:
   - '@antora/lunr-extension'
